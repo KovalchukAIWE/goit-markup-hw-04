@@ -468,6 +468,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-link:hover,
+.footer-icon-link:focus,
 .footer-icon-link:focus {
   background-color: var(--success);
 }
@@ -555,20 +556,15 @@ button {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.examples-list-wrapper:hover {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
+.examples-list-wrapper:hover,
 .examples-list-wrapper:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.examples-list:hover .portfolio-overlay {
-  transform: translateY(0%);
-}
-.examples-list:focus .portfolio-overlay {
+.examples-list:hover .portfolio-overlay,
+.examples-list:focus .portfolio-overlay,
+.examples-list:active .portfolio-overlay {
   transform: translateY(0%);
 }
 .examples-text {
